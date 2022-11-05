@@ -1,0 +1,12 @@
+.galeria{
+        @include flex(column);
+        .galeria-contenedor__titulo{
+                text-align: center;
+                background-color: $purple;
+                .galeria__titulo{
+                        font-size: $textXxl;
+                        padding: 1rem 0;
+                        margin: auto;
+                }
+        }
+}

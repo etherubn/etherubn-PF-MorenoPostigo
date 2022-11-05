@@ -1,0 +1,33 @@
+.servicios{
+        background-color: $darkPink;
+        padding: 2rem;
+        @include flex(column);
+        .servicios__titulo{
+                @include texto($textMd);
+                text-align: center;
+                margin: 2rem auto;
+        }
+        .servicios__contenedor{
+                padding-bottom: 1rem;
+                .servicio{
+                        background-color: $pink;
+                        @include flex (column);
+                        border: $purple solid thin;
+                        border-radius: 1rem;
+                        text-align: center;
+                        margin: 2rem 1.5rem;
+                        .servicios__imagen{
+                                border-top-left-radius: 1rem;
+                                border-top-right-radius: 1rem;
+                                margin: 0 auto;
+                        }
+                        .servicios__titulo-servicio{
+                                text-align: center;
+                                font-size: $textMd;
+                        }
+                        .servicios__descripcion{
+                                font-size: $textSm;
+                        }
+                }
+        }
+}

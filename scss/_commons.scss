@@ -1,0 +1,28 @@
+//variables
+$pink :#FAB4C9;
+$darkPink:#CC5B86;
+$softPink: #F2F2F2;
+$purple: #505b99;
+
+html{
+  font-size: 62.5%;
+  box-sizing: border-box;
+}
+
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+img, picture{
+  display: block;
+  max-width: 100%;
+  line-height: 0;
+}
+
+a{
+        text-decoration: none;
+}
+
+
+
+

@@ -1,0 +1,88 @@
+main{
+        .frase{
+                text-align: center;
+                background-color: $darkPink;
+                .frase__titulo{
+                        font-size: $textXxl;
+                        text-align: center;
+                        margin: auto;
+                        color: $pink;
+                        padding: 1rem 0;
+                 }
+        }
+        .objetivos{
+                @include flex(column);
+                background-color: $softPink;
+                padding: 5rem;
+                background-image: url("../img/fondo-repetitivo.jpg");
+                .contenedor__objetivos{
+                        @include flex(column,flex-start);
+                        margin: 4rem auto;
+                        .objetivos__titulo{
+                                text-align: center;
+                                 font-size: $textXl;
+                                font-weight: $textBold;
+                                margin: 2rem auto;
+                        }
+                        .objetivos__texto{
+                                text-align: center;
+                                font-size: $textSm;
+                                margin: 0 6rem;
+                        }
+                }
+        }
+        .producto{
+                @include flex(column);
+               background-color: $darkPink;
+               .producto__titulo{
+                        text-align: center;
+                        font-size: $textXl;
+                        padding: 2rem;
+               }
+               .productos-content{
+                        margin: 2rem 0;
+                        .producto__descripcion{
+                                margin: 1rem;
+                                text-align: center;
+                                color: $purple;
+                                .producto__imagen{
+                                        border-top-left-radius: 0.5rem;
+                                        border-top-right-radius: 0.5rem;        
+                                }
+                                .producto__nombre{
+                                        background-color: $pink;
+                                        font-weight: $textBold;
+                                        font-size: 2rem;
+                                        padding: 1rem 0;
+                                }
+                                .producto__precio{
+                                        font-weight: $textBold;
+                                        font-size: $textSm;
+                                        background-color: $pink;
+                                        padding-bottom: 1rem;
+                                        margin: 0;
+                                }
+                        }
+               } 
+        }
+}
+
+.aside{
+        background-color: $pink;
+        .aside-content{
+                @include flex(column,center,center);
+                font-size: $textSm;
+                padding: 2rem;
+                text-align: center;
+                .aside-content__img{
+                        margin-bottom: 0.5rem;
+                }
+                .aside-content__titulo{
+                        font-size: $textSm;
+                        margin-bottom: 0.5rem;
+                }
+                .aside-content__texto{
+                        margin-top: 0;
+                }
+        }
+}

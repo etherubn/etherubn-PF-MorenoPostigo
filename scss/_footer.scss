@@ -1,0 +1,34 @@
+.footer{
+        background-color: $softPink;
+        @include flex(column,center,center);
+        .footer__logo{
+                margin:0.5rem auto;
+                padding: 0.5rem;
+                width:60%;
+                @include flex(row,center,center);
+                .logo__imagen{
+                        width: 30%;
+                }
+        }
+        .red-social{
+                width: 50%;
+                margin: 0.5rem auto;
+                @include flex(column,center,center);
+                .red-social__titulo{
+                        font-size: $textSm;
+                        text-align: center;
+                }
+                .contain-red-social{
+                        @include flex(row,space-between,center);
+                        width: 75%;
+                        margin: 1rem auto;
+                        .red-social__enlace{
+                                width: 20%;
+                                text-align: center;
+                                .red-social__logo{
+                                        width: 50%;
+                                }
+                        }
+                }
+        }
+}

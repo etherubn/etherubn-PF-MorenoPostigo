@@ -1,0 +1,60 @@
+.filtros{
+        color: $pink;
+        padding: 1rem 3rem;
+        font-size: $textSm;
+        line-height: 1.8rem;
+        @include flex(column,null,center);
+        .filtros__categoria{
+                color: $darkPink;
+                margin: 1rem 0;
+        }
+        .filtros__lista{
+                @include flex(column,flex-start);
+                margin: 0.5rem 0;
+                padding: 0;
+                list-style-position: inside;
+                .filtros__enlace{
+                        color: pink;
+                        &:hover{
+                                font-weight: $textRegular;
+                        }
+                }
+        }
+}
+
+.carta{
+        @include flex(column);
+        background-color: $darkPink;
+        padding: 3rem;
+        .carta__titulo{
+                font-size: $textXl;
+                text-align: center;
+                margin: 2rem auto;
+        }
+        .carta-content{
+                @include flex(null,space-evenly,null,wrap);
+                margin: 0 auto;
+                .carta__descripcion{
+                        background-color: $pink;
+                        border: $purple solid thin;
+                        margin: 2rem 3rem;
+                        &:hover{
+                                border: $purple solid 0.5rem;
+                        }
+                        .carta__nombre{
+                                text-align: center;
+                                color: $purple;
+                                font-weight: $textBold;
+                                font-size: $textMd;
+                                margin: 1rem auto;
+                        }
+                        .carta__precio{
+                                text-align: center;
+                                color: $purple;
+                                font-weight: $textBold;
+                                font-size: $textMd;
+                                margin: 1rem auto;
+                        }
+                }
+        }
+}

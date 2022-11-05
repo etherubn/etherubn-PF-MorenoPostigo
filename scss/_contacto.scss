@@ -1,0 +1,55 @@
+.contenedor-contacto{
+        @include flex(column);
+        .titulo-contenedor{
+                background-color: $darkPink;
+                
+                .contacto-titulo-general{
+                        font-size: $textXxl;
+                        margin: auto;
+                        padding: 1rem 0;
+                        text-align: center;
+                }
+        }
+        .contacto{
+                @include flex(column,space-around,center);
+                background-color: $pink;
+                .mensaje-contenedor{
+                        @include flex(column,space-between,flex-start);
+                        .contacto__titulo{
+                                font-size: $textMd;
+                                text-align: center;
+                                padding: 3rem;
+                        }
+                        form{
+                                font-size: $textMd;
+                                background-color: $darkPink;
+                                .contacto__input{
+                                        &::placeholder{
+                                                font-size: $textSm;
+                                        }
+                                }
+                                button{
+                                        background-color:$softPink; 
+                                        font-size: $textSm;
+                                }
+                        }
+                }
+                .ubicacion{
+                        @include flex(column,center);
+                        padding-block: 4rem;
+                        .ubicacion__titulo{
+                                 font-size: $textMd;
+                                text-align: center;
+                                padding: 3rem;
+                        }
+                        .ubicacion__direccion{
+                                font-size: $textSm;
+                                text-align: center;
+                        }
+
+                        iframe{
+                                width: 100%;
+                        }
+                }
+        }
+}

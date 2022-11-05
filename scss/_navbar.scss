@@ -1,0 +1,20 @@
+.header{
+  background-color: $softPink;
+  nav{
+    padding: 1rem;
+    img{
+    height: 7rem;
+    }
+    ul{
+      li{
+        margin: 0 3rem;
+        a{
+                @include texto($textMd,$darkPink);
+                &:hover{
+                        color: $purple;
+                }
+        }
+      }
+    }
+  } 
+}
